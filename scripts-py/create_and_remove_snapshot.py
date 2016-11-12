@@ -13,10 +13,10 @@ from pyVmomi import vim, vmodl
 from pyVim import connect
 from pyVim.connect import Disconnect, SmartConnect, GetSi
 
-inputs = {'vcenter_ip': '10.17.90.69',
-          'vcenter_password': 'S1mb0l08000',
-          'vcenter_user': 'dgalan',
-          'vm_name' : 'vgproxy01',
+inputs = {'vcenter_ip': 'X.X.X.X',
+          'vcenter_password': '1234',
+          'vcenter_user': 'lcancela',
+          'vm_name' : 'vgtest01',
           #create, remove or revert
           'operation' : 'create',
           'snapshot_name' : 'my_test_snapshot',   
