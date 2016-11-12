@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Para cada bloque de búsqueda en Chef (Proyecto-entorno) se ejecuta el script autopatch.sh, que realiza la búsqueda de nodos en Chef, busca snapshots de esos nodos, y si existen, los parchea
+
+source /var/Tools/config.sh
+
+cd /var/Tools
+
+for chefquery in "${ventana_pro_domingo_11_15[@]}"
+do
+    sh snapshots4autopatch.sh "${chefquery}" 
+done
